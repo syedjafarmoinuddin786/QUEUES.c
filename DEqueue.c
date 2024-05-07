@@ -115,11 +115,12 @@ void display(){
 		if(front==-1)
 			printf("QUEUE IS EMPTY\n");
 		else{
-			while(i!=rear)
-				printf("4%d\n",DEqueue[i]);
+			while(i!=rear){
+				printf("%d\n",DEqueue[i]);
 				i=(i+1)%MAX;
+			}	
 		}
-		printf("4%d\n",DEqueue[rear]);
+		printf("%d\n",DEqueue[rear]);
 }
 		 	
 
